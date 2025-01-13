@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">IPTECK</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">QUIENES SOMOS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">SERVICIOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Isotipo IPTECK.png" alt="">
+            </div>
+            <h1>IPTECK</h1>
+            <h2>Confianza, Seguridad y Tranquilidad en el mundo digital</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE NOSOTROS -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>QUIENES SOMOS</h2>
+            <p><span>Hola, somos IPTECK.</span> Somos tu aliado en ciberseguridad y telecomunicaciones. Nos especializamos en proteger tus datos y mantener tus conexiones seguras, brindándote soluciones confiables, personalizadas e innovadoras. Nuestro compromiso
+                es garantizar la tranquilidad de tu empresa en el entorno digital, ayudándote a crecer con confianza y seguridad.</p>
+        </div>
+    </section>
+
+
+    <!-- SECCION SERVICIOS -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>SERVICIOS</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i>  Optimización y monitoreo</h4>
+                        <span class="casa">Riverbed</span>
+                        <p>
+                            Enfocados en optimizar el rendimiento de redes y aplicaciones, Riverbed permite a las empresas maximizar su infraestructura tecnológica. Ofrecemos soluciones avanzadas de monitoreo y optimización de redes, asegurando una experiencia de usuario fluida y mejorando la productividad empresarial.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i> Sistemas de seguridad</h4>
+                        <span class="casa">Sophos</span>
+                        <p>
+                            Como expertos en Sophos, brindamos protección integral contra amenazas cibernéticas, combinando firewalls de última generación, soluciones de endpoint y herramientas de cifrado. Garantizamos la seguridad de tus datos, con soluciones fáciles de gestionar para empresas de todos los tamaños.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i> Sistemas de seguridad</h4>
+                        <span class="casa">Cyrebro</span>
+                        <p>
+                            Especialistas en Cyrebro, te ayudamos a integrar esta revolucionaria plataforma de operaciones de ciberseguridad, que centraliza y automatiza la gestión de incidentes. Nuestro equipo asegura una respuesta ágil y eficiente ante cualquier amenaza.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i>  Respaldo</h4>
+                        <span class="casa">Acronis</span>
+                        <p>
+                            Especialistas en soluciones de respaldo y recuperación, con Acronis protegemos tus datos contra pérdidas, ataques y desastres. Ofrecemos servicios de gestión de copias de seguridad, recuperación ante desastres y ciberprotección avanzada.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i> Sistemas de seguridad</h4>
+                        <span class="casa">Fortinet</span>
+                        <p>
+                            Fortinet proporciona una amplia gama de soluciones en ciberseguridad para proteger redes, aplicaciones y usuarios. Nuestra experiencia incluye la implementación de firewalls, SD-WAN y sistemas de detección de amenazas avanzadas, asegurando la continuidad de tus operaciones en un entorno seguro.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> <i class="fa-solid fa-shield-halved" style="color: #63E6BE;"></i> Sistemas de seguridad</h4>
+                        <span class="casa">Vicarius</span>
+                        <p>
+                            Con Vicarius, protegemos tus aplicaciones y sistemas contra vulnerabilidades desconocidas. Nuestro enfoque proactivo en ciberseguridad asegura que tu infraestructura esté siempre un paso adelante frente a posibles amenazas.    
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum" style="background-image: url(./img/Transmission\ -\ Free\ 5K\ Futuristic\ Wallpaper.png); margin-top: -3%;">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq" style="background-color: black;">
+                        <h4> <i class="fa-solid fa-network-wired" style="color: #63E6BE;"></i> Redes</h4>
+                        <span class="casa">Mikrotik</span>
+                        <p>
+                            Enfocados en Mikrotik, diseñamos y configuramos soluciones de red a medida. Desde routers hasta switches, optimizamos tu infraestructura de telecomunicaciones para garantizar conectividad estable, segura y escalable.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq" style="background-color: black;">
+                        <h4> <i class="fa-solid fa-network-wired" style="color: #63E6BE;"></i>Redes</h4>
+                        <span class="casa">Cisco</span>
+                        <p>
+                            Cisco es sinónimo de redes confiables y seguras. Nuestra experiencia abarca desde la implementación de redes empresariales hasta la gestión de soluciones de colaboración y ciberseguridad, asegurando tu éxito en un entorno digital en constante evolución.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der" style="background-color: black;">
+                        <h4> <i class="fa-solid fa-network-wired" style="color: #63E6BE;"></i>Redes</h4>
+                        <span class="casa">Huawei</span>
+                        <p>
+                            Como líderes en telecomunicaciones, manejamos la amplia gama de productos y servicios de Huawei, desde equipos de redes hasta soluciones en la nube. Brindamos conectividad robusta y segura adaptada a las necesidades de cada cliente.    
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der" style="background-color: black;">
+                        <h4> <i class="fa-solid fa-network-wired" style="color: #63E6BE;"></i>Redes</h4>
+                        <span class="casa">Ruijie</span>
+                        <p>
+                            Ruijie ofrece soluciones innovadoras para redes empresariales. Nuestra experiencia incluye la configuración de Wi-Fi de alta velocidad, switches inteligentes y redes optimizadas para sectores como educación, salud y comercio.
+                        </p>
+                        <div class="conectord" style="background-color: black;">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i> Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i> Llamanos: 2384 - 4343443
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i> Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/company/ipteck/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
