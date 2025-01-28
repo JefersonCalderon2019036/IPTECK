@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+@font-face {
+    font-family: 'Segoe-UI-Semibold';
+    src: url('/public/fonts/segoe-ui-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI-Blanck';
+    src: url('/public/fonts/segoe-ui-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI-Light';
+    src: url('/public/fonts/segoe-ui-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -32,11 +54,22 @@ html {
     padding: 15px 20px;
 }
 
-.contenedor-header header .logo a {
-    font-family: 'Righteous';
+.contenedor-header header .logo a .span2{
+    font-family: 'Segoe-UI-Blanck', 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color:#004d7d;
     text-decoration: none;
+    margin-left: -0.2%;
+    -webkit-text-stroke: 1px black;
+}
+
+.contenedor-header header .logo a .span1{
+    font-family: 'Segoe-UI-Blanck', 'Righteous';
+    font-size: 36px;
+    color: rgb(103, 101, 101);
+    text-decoration: none;
+    margin-left: -0.2%;
+    -webkit-text-stroke: 1px black;
 }
 
 .contenedor-header header ul {
@@ -51,14 +84,15 @@ html {
     padding: 3px;
     transition: .5s;
     text-decoration: none;
+    font-family: 'Segoe-UI-Light', 'Righteous';
 }
 
 .contenedor-header header nav ul li a:hover {
-    color: #1CB698;
+    color:#004d7d;
 }
 
 .nav-responsive {
-    background-color: #1CB698;
+    background-color: #004d7d;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -70,7 +104,7 @@ html {
 /* SECCION I N I C I O */
 
 .inicio {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(./gif/RxgL.gif);
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(./gif/1685511037725.gif);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -82,19 +116,28 @@ html {
 .inicio .contenido-banner {
     padding: 20px;
     background-color: black;
-    max-width: 350px;
+    max-width: 850px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
 }
 
+@media screen and (max-width:900px) {
+    .inicio .contenido-banner {
+        padding: 20px;
+        background-color: black;
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+}
+
 .inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #1CB698;
     display: block;
-    width: 60%;
+    width: 100%;
     margin: auto;
-    border-radius: 100%;
     background-position: center;
     background-size: cover;
 }
@@ -103,6 +146,7 @@ html {
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
+    display: none;
 }
 
 .inicio .contenido-banner h2 {
@@ -126,7 +170,7 @@ html {
 }
 
 .inicio .contenido-banner .redes a:hover {
-    background-color: #1CB698;
+    background-color: #004d7d;
 }
 
 .sobremi {
@@ -142,7 +186,7 @@ html {
 
 .sobremi h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Segoe-UI-Blanck', 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -151,11 +195,14 @@ html {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Segoe-UI-Light', 'Righteous';
 }
 
 .sobremi .contenido-seccion p span {
-    color: #1CB698;
+    color: #004d7d;
     font-weight: bold;
+    font-family: 'Segoe-UI-Light', 'Righteous';
 }
 
 .sobremi .fila {
@@ -182,12 +229,12 @@ html {
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #1CB698;
+    color: #004d7d;
     width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #1CB698;
+    background-color: #004d7d;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -212,7 +259,7 @@ html {
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-    background-color: #1CB698;
+    background-color: #004d7d;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes i {
@@ -240,7 +287,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #004d7d;
     z-index: -1;
     transition: 1s;
 }
@@ -252,7 +299,7 @@ html {
 /* SECCION SERVICIOS */
 
 .curriculum {
-    background-image: url("./img/the_subterranean_city_of_lirtus_by_jakeukalane_da3t70n.png");
+    background-image: url(./gif/215911.gif);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -267,7 +314,7 @@ html {
 
 .curriculum h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Segoe-UI-Blanck', 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -289,11 +336,13 @@ html {
 }
 
 .curriculum .fila .izquierda {
-    border-right: 2px solid #252A2E;
+    border-right: 2px solid white;
+    font-family: 'Segoe-UI-Light', 'Righteous';
 }
 
 .curriculum .fila .derecha {
-    border-left: 2px solid #252A2E;
+    border-left: 2px solid white;
+    font-family: 'Segoe-UI-Light', 'Righteous';
 }
 
 .curriculum .fila .item {
@@ -306,18 +355,20 @@ html {
 .curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
+    font-family: 'Segoe-UI-Semibold';
 }
 
 .curriculum .fila .item .casa {
-    color: #1CB698;
+    color: #004d7d;
     font-size: 22px;
     font-weight: bold;
     display: block;
+    font-family: 'Segoe-UI-Semibold';
 }
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #1CB698;
+    color: #004d7d;
     margin-bottom: 10px;
 }
 
@@ -326,18 +377,18 @@ html {
 }
 
 .curriculum .fila .izq {
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #004d7d;
     margin-right: 20px;
 }
 
 .curriculum .fila .der {
-    border-left: 2px solid #1CB698;
+    border-left: 2px solid #004d7d;
     margin-left: 20px;
 }
 
 .curriculum .fila .item .conectori {
     height: 2px;
-    background-color: #1CB698;
+    background-color: #004d7d;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -350,7 +401,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #004d7d;
     float: right;
     position: relative;
     bottom: 4px;
@@ -358,7 +409,7 @@ html {
 
 .curriculum .fila .item .conectord {
     height: 2px;
-    background-color: #1CB698;
+    background-color: #004d7d;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -371,7 +422,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #004d7d;
     float: left;
     position: relative;
     bottom: 4px;
@@ -463,7 +514,7 @@ html {
 
 .contacto h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Segoe-UI-Blanck', 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -473,7 +524,8 @@ html {
 }
 
 .contacto .col {
-    width: 50%;
+    margin-left: 20%;
+    width: 60%;
     padding: 10px;
     position: relative;
 }
@@ -510,7 +562,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #004d7d;
     z-index: -1;
     transition: 1s;
 }
@@ -542,7 +594,7 @@ html {
 }
 
 .contacto .col .info ul li i {
-    color: #1CB698;
+    color: #004d7d;
     display: inline-block;
     margin-right: 20px;
 }
@@ -578,7 +630,7 @@ footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #004d7d;
     color: #fff;
     position: absolute;
     left: 50%;
