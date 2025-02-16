@@ -236,14 +236,15 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Dirección de correo">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                <div class="col" id="emailForm">
+                    <input type="text" id="nombre" placeholder="Tú Nombre">
+                    <input type="text" id="correo" placeholder="Dirección de correo">
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button onclick="enviarCorreo()">
                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
+                    <p id="response"></p>
                 </div>
                 <!-- Mapa -->
                 <div class="col" style="display: none;">
@@ -280,6 +281,50 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        async function enviarCorreo() {
+            // Capturar datos del formulario
+            const nombre = document.getElementById("nombre").value.trim();
+            const correo = document.getElementById("correo").value.trim();
+            const asunto = "BIENVENIDO A IPTECK";
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const responseElement = document.getElementById("response");
+
+            // Validación de campos vacíos
+            if (!nombre || !correo || !asunto || !mensaje) {
+                responseElement.innerHTML = "⚠️ Todos los campos son requeridos.";
+                responseElement.style.color = "red";
+                return;
+            }
+
+            // Enviar datos al servidor con POST
+            try {
+                const response = await fetch("https://enviar-correo-ipteck.onrender.com/send-email", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ nombre, correo, asunto, mensaje })
+                });
+
+                const result = await response.json();
+                console.log("📩 Respuesta del servidor:", result);
+
+                if (response.ok) {
+                    responseElement.innerHTML = "✅ Correo enviado con éxito.";
+                    responseElement.style.color = "green";
+                } else {
+                    responseElement.innerHTML = `❌ Error: ${result.error}`;
+                    responseElement.style.color = "red";
+                }
+            } catch (error) {
+                console.error("❌ Error en la solicitud:", error);
+                responseElement.innerHTML = "❌ Error al conectar con el servidor.";
+                responseElement.style.color = "red";
+            }
+        }
+    </script>
 </body>
 
 </html>
